@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        
+        <form method="get">
+            <fieldset>
+                <ul>
+                    <li> 
+                        <label for="latitude">latitude</label>
+                        <input type="text"  id="latitude" placeholder="e.g. 42.9150747 required"
+                    </li>
+                    
+                    <li>
+                        <label for="longitude">Longitude</label>
+                         <input type="text"  id="longitude" placeholder="e.g. -77.784323 required"
+                    </li>
+                    
+                    <li>
+                       <label for="city-search">City Name</label>
+                       <input type="text" id="city-search" placeholder="e.g. Rochester, NY">
+                    </li>
+                </ul>
+          </fieldset>
+          
+          <button>Get Weather</button>
+          </form>
+                        
+                    
+                    
+                    
+                </ul>
+            </fieldset>
+            
+            
+        </form>
+
+        <div id="weather">
+
+            <ul id="scroller">
+                <!-- Forecast items will go here -->
+            </ul>
+
+            <a href="#" class="arrow previous">Previous</a>
+            <a href="#" class="arrow next">Next</a>
+
+        </div>
+
+        <p class="location"></p>
+
+        <div id="clouds"></div>
+
+    
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>
